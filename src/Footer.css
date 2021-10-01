@@ -1,0 +1,44 @@
+
+.bottom-menu{
+    background-color: rgb(20, 20, 20);
+    color: grey;
+    padding: 100px 0 100px 120px;
+}
+    
+.sns-icons{
+    display: flex;
+    line-height: 30px;
+}
+
+.sns-icon{
+    width: 50px;
+    height: 30px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.menu-bar{
+    padding-bottom: 50px;
+}
+
+.menu-list{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.sub-menu{
+    padding-right: 200px;
+    width: 200px;
+}
+
+.service-code{
+    font-size: 18px;
+    border: 1px solid grey;
+    padding: 5px 5px;
+    width: fit-content;
+}
+
+.netflix-address{
+    padding-top: 15px;
+    font-size: 12px;
+}

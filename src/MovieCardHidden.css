@@ -1,0 +1,91 @@
+.movie-menu-list{
+    display: flex;
+}
+
+.other-items{
+    display: flex;
+    padding-right: 20px;
+}
+
+.movie-menu{
+    padding-right: 10px;
+}
+
+.movie-menu:hover .tooltip{
+    visibility: visible;
+}
+
+.tooltip{
+    visibility: hidden;
+    font-size: 10px;
+    position: absolute;
+    top: -15px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.menu-button{
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.menu-button-right-padding{
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding: 5px 5px 5px 6px;
+    cursor: pointer;
+}
+
+.menu-button:hover{
+    border: 1px solid white;
+}
+
+.menu-button-right-padding:hover{
+    border: 1px solid white;
+}
+
+.episode{
+    padding-top: 10px;
+}
+
+.progress-info {
+    display: flex;
+    line-height: 20px;
+    align-items: center;
+}
+
+.progress_bar{
+    height: .8px;
+    width: 40%;
+    background-color: grey;
+    border-color: grey;
+    margin-right: 10px;
+}
+
+.time_info{
+    font-size: 10px;
+}
+
+.hidden{
+    width: 224px;
+    visibility: hidden;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 900;
+    position: absolute;
+    opacity: .9;
+}
+
+.hidden-items{
+    margin: 15px 15px;
+}

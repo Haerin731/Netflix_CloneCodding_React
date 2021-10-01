@@ -1,0 +1,42 @@
+/* body태그도 별도의 속성을 가지고 있기 때문에, 원하는 디자인을 깨트릴 수 있다. 그럴때는 body에도 속성을 주자. */
+body {
+    margin:0;
+}
+.home{
+    position: relative;
+    /* 매우 중요! 브라우저는 박스 모델을 가지고 있는데, 부모가 relative를 선언하게 되면 자식들은 밖으로 못나감. */
+    background-color: rgb(20, 20, 20);
+
+    /* 보이는 영역까지 home의 사이즈로 인식 */
+    height: 170%;
+}
+video{
+    width: 100%;
+}
+
+.n-series{
+    display:flex;
+    line-height: 20px;
+}
+.n{
+font-size: 30px;
+font-weight: 900;
+color: red;
+}
+.series{
+font-size: 15px;
+color: white;
+padding-left: 3px;
+}
+.title{
+    font-size: 72px;
+}
+.badge{
+    font-size: 25px;
+    font-weight: 900;
+    padding: 15px 0;
+}
+
+.description{
+    width: 40%;
+}

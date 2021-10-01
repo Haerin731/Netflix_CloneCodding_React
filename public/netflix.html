@@ -1,0 +1,534 @@
+<html>
+    <head>
+        <!-- css란 Cascalding Style Sheets 의 약자로 웹문서의 스타일을 지정해 놓은 파일.
+        다시말해 웹사이트를 꾸미는 style의 정의를 모아 둔 파일. -->
+        <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+        
+        <script src="https://kit.fontawesome.com/9df39b2ce5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./netflix.css" />
+        <!-- link 태그의 rel : 현재 문서와 외부 리소스 사이의 연관 관계를 명시
+        lint 태그의 href : 링크된 외부 리소스의 url을 명시 -->
+        <!-- html에 css를 적용시키는 방법 중, 별도의 css파일을 만들고 html 문서와 연결하는 방법을 택. -->
+        <script src="./netflix.js"></script>
+        <!-- src: 링크된 외부 리소스의 url을 명시 -->
+    </head>
+    <body>
+        <!-- div태그는 Division의 약자로 웹사이트의 레이아웃(전체적인 틀)을 만들때 주로 사용 -->
+        <!-- <div> 요소는 "순수" 컨테이너로서 아무것도 표현하지 않습니다. 
+            대신 다른 요소 여럿을 묶어 class나 id 속성으로 꾸미기 쉽도록 돕거나, 
+            문서의 특정 구역이 다른 언어임을 표시(lang 속성 사용)하는 등의 용도로 사용할 수 있습니다. -->
+       
+        <div class="home">
+            <!-- 별도로 설정 안하면 video사이즈를 home의 사이즈로 인식 -->
+            <video
+                src="./sweethome.mp4"
+                poster="./sweethome.jpg"
+                autoplay 
+                muted
+            >
+            </video>
+            <!-- autoplay: 동영상 자동재생 -->
+            <!-- muted: 악용 방지를 위해 써야함 -->
+            <Overlay></Overlay>
+            <div class="category-list">
+                <div class="category">
+                    <div class="subtitle">
+                        지금 뜨는 컨텐츠
+                    </div>
+                    <div class="list">
+                        <div class="movie" onta>
+                            <!-- <img src="" alt=""/> -->
+                            <!-- placeholder: 실제 이미지 들어오기 전에 UI를 비지 않게 채워넣기 위한 것들 -->
+                            <!-- 새로고침시 랜덤 이미지를 출력해주는 사이트 : https://source.unsplash.com/random -->
+                            <!-- 출력 예시. 위 크기로 movie 키워드 이미지를 보여줘 : https://source.unsplash.com/1600x900/?poster -->
+                            <!-- 동일한 이미지를 따오려면? Ctrl+Shift+C를 눌러서 개발자 도구로 진입, 클릭한 클래스의 img src를 가져옴 -->
+                            <img src="https://occ-0-3077-988.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABW7SSZMxImSYcoXzoeI-dDHIOhP0DHhTTHF1R0HWbacQtghkeAaitw_PSHGYInuoedkY9TAkX9eFAuBjA7RoO81zCq8.webp?r=bd1" alt=""/>
+                            <div class="hidden">
+                                <div class="hidden-items">
+                                    <div class="movie-menu-list">
+                                        <div class="other-items">
+                                            <div class="movie-menu">
+                                                <span class="tooltip">재생하기</span>
+                                                <div class="menu-button-right-padding">
+                                                    <i class="fas fa-play fa-sm"></i>
+                                                </div>
+                                            </div>
+                                            <div class="movie-menu">
+                                                <span class="tooltip">내가 찜한 콘텐츠에서 삭제</span>
+                                                <div class="menu-button">
+                                                    <i class="fas fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="movie-menu">
+                                                <span class="tooltip">평가한 콘텐츠</span>
+                                                <div class="menu-button">
+                                                    <i class="fas fa-thumbs-up"></i>
+                                                </div>
+                                            </div>
+                                            <div class="movie-menu">
+                                                <span class="tooltip">맘에 안 들어요</span>
+                                                <div class="menu-button">
+                                                    <i class="far fa-thumbs-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="movie-menu">
+                                                <span class="tooltip">줄에서 삭제</span>
+                                                <div class="menu-button-right-padding">
+                                                    <i class="fas fa-times"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            <div class="movie-menu">
+                                                <div class="menu-button">
+                                                    <span class="tooltip">회차 및 상세 정보</span>
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="episode">
+                                        시즌 8: 16화 고백
+                                    </div>
+                                    <div class="progress-info">
+                                        <div class="progress_bar"></div>
+                                        <div class="time_info">
+                                            총 21분 중 16분
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="movie">
+                            <img src="https://occ-0-3077-988.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWROWc4ipy4upELRXgU25JKDF6f0f83XKF2sgMbtdp5Nf4nyKIeKe9ZsNGeTV5PCo-p1-GFODIoWSS7WG-pAMGMW_GM.webp?r=d03" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://occ-0-3077-988.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXDK-s7kGPUkRWRLc2DNGgA52iPF65Qs_cU8NU7E6DMmTBZRHQ03WDWUrUkAZD397Q_ijj_AOMGzEhql8q2LCukXsjRqGADzS04-fmw7wMdd59wNUk9vGahOadcWN-pOS4F9hLdyYuYj5NRGWDOpR7FVzDFp4N2ofSo6r1-KWzXb1Niv1MAb-hWl_VU7.webp?r=84b" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://occ-0-3077-988.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdpT8YY65LBIxbhPu0lCquTt5zxG50CLtEFNDkS3oIcb7NYUNa2Fcg1V5QfoEu7yTBZukxFysUE3uMx24QV7xMC0ikU.webp?r=8be" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?computer" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?game" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?house" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?sea" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?mountain" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?cap" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?university" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?family" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?friend" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="subtitle">
+                        베티님이 시청중인 컨텐츠 
+                    </div>
+                    <div class="list">
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?game" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?blue" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?happy" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?doll" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?movie" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?poster" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?dog" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?cat" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?fountain" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?singer" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?musical" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?metal" alt=""/>
+                        </div>
+                        <div class="movie">
+                            <img src="https://source.unsplash.com/224x126/?leather" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <div class="subtitle">
+                        TV 프로그램
+                    </div>
+                    <div class="list">
+                        <div class="list">
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?parent" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?sad" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?switch" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?great" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?music" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?picture" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?propose" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?purpose" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?princess" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?kingdom" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?integrity" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?love" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?goddess" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="subtitle">
+                        TV 프로그램,흥미진진
+                    </div>
+                    <div class="list">
+                        <div class="list">
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?grass" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?sky" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?tree" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?play" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?computer" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?game" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?house" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?sea" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?greek" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?cheese" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?bread" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?butter" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?hungry" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="subtitle">
+                        시련에 맞서는 연인
+                    </div>
+                    <div class="list">
+                        <div class="list">
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?a" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?b" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?c" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?d" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?e" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?f" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?g" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?h" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?i" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?j" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?k" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?l" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?m" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="subtitle">
+                        TV프로그램, 코미디
+                    </div>
+                    <div class="list">
+                        <div class="list">
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?n" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?o" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?p" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?q" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?r" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?s" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?t" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?u" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?v" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?w" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?x" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?y" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?z" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="subtitle">
+                        액션 & 어드벤쳐
+                    </div>
+                    <div class="list">
+                        <div class="list">
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?now" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?know" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?abc" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?next" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?time" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?want" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?to" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?sing" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?with" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?me" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?marry" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?christmas" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?and" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="subtitle">
+                        내가 찜한 콘텐츠
+                    </div>
+                    <div class="list">
+                        <div class="list">
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?have" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?a" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?happy" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?new" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?years" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?eve" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?every" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?man" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?on" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?the" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?planet" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?bless" alt=""/>
+                            </div>
+                            <div class="movie">
+                                <img src="https://source.unsplash.com/224x126/?you" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="bottom-menu">
+            <div class="sns-icons">
+                <div class="sns-icon">
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                </div>
+                <div class="sns-icon">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+                <div class="sns-icon">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </div>
+                <div class="sns-icon">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </div>
+            </div>
+            <div class="menu-bar">
+                <div class="menu-list">
+                    <div class="sub-menu">자막 및 음성</div>
+                    <div class="sub-menu">음성 지원</div>
+                    <div class="sub-menu">고객 센터</div>
+                    <div class="sub-menu">기프트 카드</div>
+                </div>
+                <div class="menu-list">
+                    <div class="sub-menu">미디어 센터</div>
+                    <div class="sub-menu">투자 정보(IR)</div>
+                    <div class="sub-menu">입사 정보</div>
+                    <div class="sub-menu">이용 약관</div>
+                </div>
+                <div class="menu-list">
+                    <div class="sub-menu">개인 정보</div>
+                    <div class="sub-menu">법적 고지</div>
+                    <div class="sub-menu">쿠키 설정</div>
+                    <div class="sub-menu">회사 정보</div>
+                </div>
+                <div class="menu-list">
+                    <div class="sub-menu">문의하기</div>
+                </div>
+            </div>
+            <div class="service-code">
+                서비스 코드
+            </div>
+            <div class="netflix-address">
+                넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 080-001-9587<br>
+                대표: 레지널드 숀 톰프슨<br>
+                이메일 주소 : korea@netflix.com<br>
+                주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161<br>
+                사업자등록번호: 165-87-00119<br>
+                클라우드 호스팅 : Amazon Web Services Inc.<br>
+                공정거래위원회 웹사이트<br>
+                {1ad53568-c4d7-45f4-b10e-da10080faf0}<br> 
+            </div>
+        </div>
+    </footer>
+</html>  
