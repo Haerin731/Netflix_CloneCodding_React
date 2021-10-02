@@ -4,27 +4,27 @@ import './Footer.css';
 class MenuBar extends Component{
     render() {
         return(
-            <div class="menu-bar">
-                    <div class="menu-list">
-                        <div class="sub-menu">자막 및 음성</div>
-                        <div class="sub-menu">음성 지원</div>
-                        <div class="sub-menu">고객 센터</div>
-                        <div class="sub-menu">기프트 카드</div>
+            <div className="menu-bar">
+                    <div className="menu-list">
+                        <div className="sub-menu">자막 및 음성</div>
+                        <div className="sub-menu">음성 지원</div>
+                        <div className="sub-menu">고객 센터</div>
+                        <div className="sub-menu">기프트 카드</div>
                     </div>
-                    <div class="menu-list">
-                        <div class="sub-menu">미디어 센터</div>
-                        <div class="sub-menu">투자 정보(IR)</div>
-                        <div class="sub-menu">입사 정보</div>
-                        <div class="sub-menu">이용 약관</div>
+                    <div className="menu-list">
+                        <div className="sub-menu">미디어 센터</div>
+                        <div className="sub-menu">투자 정보(IR)</div>
+                        <div className="sub-menu">입사 정보</div>
+                        <div className="sub-menu">이용 약관</div>
                     </div>
-                    <div class="menu-list">
-                        <div class="sub-menu">개인 정보</div>
-                        <div class="sub-menu">법적 고지</div>
-                        <div class="sub-menu">쿠키 설정</div>
-                        <div class="sub-menu">회사 정보</div>
+                    <div className="menu-list">
+                        <div className="sub-menu">개인 정보</div>
+                        <div className="sub-menu">법적 고지</div>
+                        <div className="sub-menu">쿠키 설정</div>
+                        <div className="sub-menu">회사 정보</div>
                     </div>
-                    <div class="menu-list">
-                        <div class="sub-menu">문의하기</div>
+                    <div className="menu-list">
+                        <div className="sub-menu">문의하기</div>
                     </div>
                 </div>
         );
@@ -34,18 +34,18 @@ class MenuBar extends Component{
 class SnsIcons extends Component{
     render(){
         return (
-            <div class="sns-icons">
-                <div class="sns-icon">
-                    <i class="fab fa-facebook-square fa-2x"></i>
+            <div className="sns-icons">
+                <div className="sns-icon">
+                    <i className="fab fa-facebook-square fa-2x"></i>
                 </div>
-                <div class="sns-icon">
-                    <i class="fab fa-instagram fa-2x"></i>
+                <div className="sns-icon">
+                    <i className="fab fa-instagram fa-2x"></i>
                 </div>
-                <div class="sns-icon">
-                    <i class="fab fa-twitter fa-2x"></i>
+                <div className="sns-icon">
+                    <i className="fab fa-twitter fa-2x"></i>
                 </div>
-                <div class="sns-icon">
-                    <i class="fab fa-youtube fa-2x"></i>
+                <div className="sns-icon">
+                    <i className="fab fa-youtube fa-2x"></i>
                 </div>
             </div>
         );
@@ -55,13 +55,13 @@ class SnsIcons extends Component{
 class Footer extends Component{
     render() {
         return(
-            <div class="bottom-menu">
+            <div className="bottom-menu">
                 <SnsIcons></SnsIcons>
                 <MenuBar></MenuBar>
-                <div class="service-code">
+                <div className="service-code">
                     서비스 코드
                 </div>
-                <div class="netflix-address">
+                <div className="netflix-address">
                     넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 080-001-9587<br/>
                     대표: 레지널드 숀 톰프슨<br/>
                     이메일 주소 : korea@netflix.com<br/>

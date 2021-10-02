@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+
+.backward-wrapper{
+    background-color: black;
+}
+
+.go-backward > i{
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+.play-video{
+    background-color: black;
+    height: 200%;
+}
+
+.play-video > video{
+    width: 100%;
+}

@@ -1,6 +1,8 @@
 /* body태그도 별도의 속성을 가지고 있기 때문에, 원하는 디자인을 깨트릴 수 있다. 그럴때는 body에도 속성을 주자. */
 body {
     margin:0;
+    background-color: rgb(20, 20, 20);
+    height: 170%;
 }
 .home{
     position: relative;

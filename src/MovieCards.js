@@ -1,23 +1,6 @@
-import {Component} from 'react';
 import MovieCardHidden from './MovieCardHidden.js';
 import './MovieCards.css';
 import './MovieCardHidden.css';
-import MovieCardInfos from './MovieCards.json';
-
-// function LoadMovieCards(){
-//     return fetch("./MovieCards.json")
-//     .then((response) => response.json())
-//     .then((json) => json.movie_cards);
-// }
-
-// function createHTMLString(item){
-//     return `
-//     <div class="movie">
-//        <img src="https://occ-0-3077-988.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABW7SSZMxImSYcoXzoeI-dDHIOhP0DHhTTHF1R0HWbacQtghkeAaitw_PSHGYInuoedkY9TAkX9eFAuBjA7RoO81zCq8.webp?r=bd1" alt=""/>
-//        <MovieCardHidden></MovieCardHidden>
-//     </div>
-//     `
-// }
 
 const GetCategory = ({title}) => {
     return (
@@ -47,12 +30,12 @@ const GetMovieCard = ({src}) => {
     );
 }
 
-class MovieCards extends Component{
-    render(){
-        return (
-            <div class="category-list">
+const MovieCards = ({user}) => {
+    var userTitle = user + "님이 시청중인 컨텐츠";
+    return (
+        <div class="category-list">
                 <GetCategory title="지금 뜨는 컨텐츠"></GetCategory>
-                <GetCategory title="베티님이 시청중인 컨텐츠"></GetCategory>
+                <GetCategory title={userTitle}></GetCategory>
                 <GetCategory title="TV 프로그램"></GetCategory>
                 <GetCategory title="TV 프로그램,흥미진진"></GetCategory>
                 <GetCategory title="시련에 맞서는 연인"></GetCategory>
@@ -60,8 +43,7 @@ class MovieCards extends Component{
                 <GetCategory title="액션 & 어드벤쳐"></GetCategory>
                 <GetCategory title="내가 찜한 콘텐츠"></GetCategory>
         </div>
-        );
-    }
+    );
 }
 
 export default MovieCards;

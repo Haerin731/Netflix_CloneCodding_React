@@ -1,0 +1,78 @@
+.header{
+    line-height: 36px;    
+}
+
+.empty-space{
+    padding-top: 500px;
+}
+
+.list-profile{
+    color:grey;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profiles{
+    display: flex;
+    /* 세로정렬 */
+    align-items: center;
+    /* 가로정렬 */
+    justify-content: center;
+}
+
+.profile{
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.profile > img:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.profile > img{
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.profile > FontAwesomeIcon{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 10px;
+}
+
+.profile > FontAwesomeIcon:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.message{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.name{
+    font-size: 15px;
+}
+
+.profile-manager{
+    font-size: 20px;
+    margin-top: 100px;
+    padding: 5px 20px;
+    border: 1px solid;
+    width: fit-content;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.profile-manager:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+}

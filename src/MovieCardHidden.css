@@ -35,13 +35,8 @@
     cursor: pointer;
 }
 
-.menu-button-right-padding{
-    width: 10px;
-    height: 10px;
-    border-radius: 15px;
-    border: 1px solid grey;
-    padding: 5px 5px 5px 6px;
-    cursor: pointer;
+.menu-button > svg{
+    padding: 0 0 5px 0;
 }
 
 .menu-button:hover{
